@@ -177,4 +177,3 @@ plt.plot(range(0, config.epochs), train_loss, label='train')
 plt.plot(range(0, config.epochs), vali_loss, label='valid')
 plt.legend(fontsize="10", loc="upper right")
 plt.show()
-
