@@ -1,8 +1,6 @@
 import torch
 import numpy as np
 import torch.nn as nn
-from thop import profile
-from thop import clever_format
 import math
 
 class GraphConvolution(nn.Module):
