@@ -177,3 +177,15 @@ plt.plot(range(0, config.epochs), train_loss, label='train')
 plt.plot(range(0, config.epochs), vali_loss, label='valid')
 plt.legend(fontsize="10", loc="upper right")
 plt.show()
+
+# prediction
+y_pred_pred = model(x_pred_tensor, adj_pred_tensor, device).to(torch.device("cpu"))
+y_pred_pred = scaler.inverse_transform(y_pred_pred.detach().numpy())
+y_pred_tensor = scaler.inverse_transform(y_pred_tensor.detach().numpy())
+y_pred_pred[y_test_pred < 0] = 0
+plt.figure(figsize=(16, 6))
+plt.title(config.model_name)
+# show the last 20 step
+plt.plot(range(0, 20), y_test_pred[-20:, 2], 'r', label='a_pred', marker='.')
+plt.plot(range(0, 20), y_test_tensor[-20:, 2], 'b', label='a_tst', marker='*')
+plt.show()
