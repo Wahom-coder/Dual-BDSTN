@@ -138,7 +138,3 @@ if __name__ == "__main__":
    dual_bdstn = Dual_BDSTN(d, node * d, nhid, outputsize, node, len, dropout, num_layers, nhead)
    output = dual_bdstn(s, adj_dynamic, t)
    print(output.shape)
-
-
-
-
