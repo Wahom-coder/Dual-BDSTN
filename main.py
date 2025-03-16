@@ -84,6 +84,7 @@ config = Config()
 setup_seed(2000)
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = torch.device("cuda")
+
 # dataset
 df = pd.read_csv(config.data_path)
 adj = pd.read_csv(config.adj_path)
