@@ -1,8 +1,6 @@
 import torch
 import numpy as np
 import torch.nn as nn
-from thop import profile
-from thop import clever_format
 import math
 
 class GraphConvolution(nn.Module):
@@ -149,11 +147,3 @@ if __name__ == "__main__":
    dual_bdstn = Dual_BDSTN(d, node * 2, nhid, outputsize, node, len, dropout, num_layers, nhead)
    output = dual_bdstn(s, adj_dynamic, t)
    print(output.shape)
-
-   # 使用thop分析模型的运算量和参数量
-   flops, params = profile(dual_bdstn, inputs=(s, adj_dynamic, t))
-   # 将结果转换为更易于阅读的格式
-   flops, params = clever_format([flops, params], '%.3f')
-   print(f"运算量：{flops}, 参数量：{params}")
-
-
