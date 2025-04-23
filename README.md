@@ -11,5 +11,3 @@ sklearn 1.3.0
 tqdm 4.66.4
 
 numpy 1.26.4
-
-thop >=0.1.1
