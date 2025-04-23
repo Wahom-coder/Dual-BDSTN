@@ -75,10 +75,10 @@ class Config():
     output_size = 2
     machine = 13
     num_layers = 1
-    epochs = 1
+    epochs = 100
     nhead = 1
     dropout = 0.2
-    best_loss = 0  # if
+    best_loss = 0  # If necessary, the initial "config.best_loss" can be deliberately set to a higher value, such as 9999 
     learning_rate = 0.001
     model_name = 'Dual_BDSTN'
     save_path = '{}.pth'.format(model_name)
