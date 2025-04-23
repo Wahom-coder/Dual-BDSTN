@@ -65,8 +65,8 @@ def split_data(data, adj, timestep, feature_size):
     return [x_train, y_train, x_test, y_test, x_pred, y_pred, adj_train, adj_test, adj_pred]
 
 class Config():
-    data_path = '../Dual-BDSTN/pro_data_c.csv'
-    adj_path = '../Dual-BDSTN/pro_data_adj.csv'
+    data_path = 'pro_data_c.csv'
+    adj_path = 'pro_data_adj.csv'
     timestep = 10
     batch_size = 64
     spatial_feature_size = 2
