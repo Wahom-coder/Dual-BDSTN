@@ -1,0 +1,13 @@
+Since the paper "A dual spatial temporal neural network for bottleneck prediction in manufacturing systems" contains a symbol 
+error when quoting the TPM formula, the symbols '-' in formulas (18)-(21) are changed to '+', which is hereby corrected as follows:
+
+𝑇𝐵𝑖, 𝑡+𝑇 − 𝑇𝑆𝑖, 𝑡+𝑇 > 0 ∶ 𝑖 ∈ [1, ...,𝑗 − 1], 𝑗 ≠ 1, 𝑗 ≠ 𝑁 (16)
+𝑇𝐵𝑖, 𝑡+𝑇 − 𝑇𝑆𝑖, 𝑡+𝑇 < 0 ∶ 𝑖 ∈ [𝑗 − 1, ..., 𝑁], 𝑗 ≠ 1, 𝑗 ≠ 𝑁 (17)
+𝑇𝐵𝑗, 𝑡+𝑇 + 𝑇𝑆𝑗, 𝑡+𝑇 < 𝑇𝐵𝑗−1, 𝑡+𝑇 + 𝑇𝑆𝑗−1, 𝑡+𝑇, 𝑗 ≠ 1, 𝑗 ≠ 𝑁 (18)
+𝑇𝐵𝑗, 𝑡+𝑇 + 𝑇𝑆𝑗, 𝑡+𝑇 < 𝑇𝐵𝑗+1, 𝑡+𝑇 + 𝑇𝑆𝑗+1, 𝑡+𝑇, 𝑗 ≠ 1, 𝑗 ≠ 𝑁 (19)
+𝑖𝑓 𝑗 = 1 ∶ 𝑇𝐵1, 𝑡+𝑇 − 𝑇𝑆1, 𝑡+𝑇 > 0, 𝑇𝐵2, 𝑡+𝑇 − 𝑇𝑆2, 𝑡+𝑇 < 0, 𝑇𝐵1, 𝑡+𝑇 + 𝑇𝑆1, 𝑡+𝑇 < 𝑇𝐵2, 𝑡+𝑇 + 𝑇𝑆2, 𝑡+𝑇 (20)
+𝑖𝑓 𝑗 = 𝑁 ∶ 𝑇𝐵𝑁−1, 𝑡+𝑇 − 𝑇𝑆𝑁−1, 𝑡+𝑇 > 0, 𝑇𝐵𝑁, 𝑡+𝑇 − 𝑇𝑆𝑁, 𝑡+𝑇 < 0, 𝑇𝐵𝑁, 𝑡+𝑇 + 𝑇𝑆𝑁, 𝑡+𝑇 < 𝑇𝐵𝑁−1, 𝑡+𝑇 + 𝑇𝑆𝑁−1, 𝑡+𝑇 （21）
+
+Reference
+[1] Li, L., Chang, Q., & Ni, J. (2009). Data driven bottleneck detection of manufacturing systems. International Journal of Production Research,
+47(18), 5019–5036. https://doi.org/10.1080/00207540701881860
